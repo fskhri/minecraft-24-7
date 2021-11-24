@@ -1,13 +1,3 @@
-/*
-READ THIS
-Glitch recently started blocking uptime robot,
-so follow this (https://pastebin.com/PiTDNDNm) tutorial to makeit work without uptime robot.
-*/
-//---------------------------------------------------------------------
-// Glitch 24/7
-// Required to let uptime robot waving our bot.
-//---------------------------------------------------------------------
-
 const express = require("express");
 const http = require("http");
 
