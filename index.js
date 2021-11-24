@@ -18,9 +18,12 @@ app.use(express.json());
 app.get("/", (_, res) => res.send("hi"));
 app.listen(process.env.PORT);
 
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 224000);
+var http = require('http');
+
+http.createServer(function (req, res) {
+  res.write("I'm alive");
+  res.end();
+}).listen(8080);
 
 // End of Glitch 24/7
 
